@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.aprosoft.bfitgym.Notifications">
+
+
+    <net.mskurt.neveremptylistviewlibrary.NeverEmptyListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvnotification"
+        android:divider="@null"
+        android:background="#FEFEC2"
+        android:dividerHeight="10dp"
+        android:scrollIndicators="bottom"
+        custom:holderTextTopMargin="20dp"
+        custom:holderBackgroundColor="#ffffff"
+        custom:holderTextFontSize="6sp"
+        custom:holderTextColor="#000000"
+        custom:holderText="No Notification for Now."
+        custom:holderImageBackground="@mipmap/noti"
+        />
+
+
+
+
+</RelativeLayout>

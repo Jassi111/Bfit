@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:id="@+id/logo"
+        android:src="@mipmap/bfitlogo"
+        android:scaleType="fitXY"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:hint="Registration No."
+        android:layout_below="@+id/logo"
+        android:inputType="number"
+        />
+       <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_below="@+id/id"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="#EA1D26"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="40dp"
+
+        />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Change Password ?"
+            android:textAllCaps="false"
+            android:id="@+id/forgotpassword"
+            android:layout_below="@+id/login"
+            android:background="#0000"
+            />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

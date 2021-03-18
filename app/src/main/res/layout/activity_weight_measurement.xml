@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aprosoft.bfitgym.WeightMeasurement">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EA1D26"
+        android:id="@+id/rel11"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:textSize="23sp"
+            android:text="Body Measurement"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="none"
+        android:layout_below="@+id/rel11"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Weight"
+                android:id="@+id/weightouter"
+                >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weight"
+                android:textSize="16sp"
+                android:inputType="number"
+               />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Neck"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/weightouter"
+                android:id="@+id/neckwouter"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/neck"
+                android:textSize="16sp"
+                android:inputType="number"
+
+               />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Shoulder"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/neckwouter"
+                android:id="@+id/shoulderouter"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shoulder"
+                android:textSize="16sp"
+                android:inputType="number"
+               />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Chest"
+                android:layout_below="@+id/shoulderouter"
+                android:id="@+id/chestouter"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chest"
+                android:textSize="16sp"
+                android:inputType="number"
+                />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Biceps"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/chestouter"
+                android:id="@+id/bicepsouter"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/biceps"
+                android:textSize="16sp"
+                android:inputType="number"
+               />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Waist"
+                android:layout_below="@+id/bicepsouter"
+                android:id="@+id/waistouter"
+                >
+
+
+
+                       <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/waist"
+                           android:textSize="16sp"
+                           android:inputType="number"
+              />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Hips"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/waistouter"
+                android:id="@+id/hipsouter"
+                >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hips"
+                android:textSize="16sp"
+                android:inputType="number"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Thigh"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/hipsouter"
+                android:id="@+id/hipsouter1"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/thigh"
+                android:textSize="16sp"
+                android:inputType="number"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Calves"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/hipsouter1"
+                android:id="@+id/hipsouter11"
+                >
+
+
+                      <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calves"
+                          android:textSize="16sp"
+                          android:inputType="number"
+                />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Starting date"
+                android:textColorHint="#FF4081"
+                android:layout_below="@+id/hipsouter11"
+                android:id="@+id/hipsouter111"
+                android:layout_marginBottom="5dp"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textSize="16sp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColorHint="#FF4081"
+                android:hint="Due date"
+                android:layout_below="@+id/hipsouter111"
+                android:id="@+id/hipsouter1111"
+                android:layout_marginBottom="5dp"
+                >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/duedate"
+                android:textSize="16sp"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+               />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/submit"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:background="#EA1D26"
+                android:textAllCaps="false"
+                android:textSize="22dp"
+                android:layout_below="@+id/hipsouter1111"
+               />
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

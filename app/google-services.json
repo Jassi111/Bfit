@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "844727119223",
+    "firebase_url": "https://bfit-95ce3.firebaseio.com",
+    "project_id": "bfit-95ce3",
+    "storage_bucket": "bfit-95ce3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844727119223:android:f223335ae0b8544c",
+        "android_client_info": {
+          "package_name": "com.aprosoft.bfitgym"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844727119223-9ad2fpvfdmohrdunb2b48n2c63fr9b4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXp0uHUtDu4MEdhLm-OVCTpsKgzDh820U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

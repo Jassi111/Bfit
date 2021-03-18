@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aprosoft.bfitgym.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toppanel"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/profile"
+            android:id="@+id/profile"
+            />
+
+   <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/profile"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/notification"
+            android:id="@+id/notification"
+            />
+
+ <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/notification"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/notification"
+            android:id="@+id/feedback"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/notification"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#EA1D26"
+            android:textSize="18sp"
+            android:id="@+id/feedue"
+            android:textAlignment="center"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rellay1"
+        android:layout_below="@+id/toppanel"
+        android:background="#EA1D26"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Class"
+            android:id="@+id/text"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textSize="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No upcoming class yet! We will notify you when a class is available"
+            android:id="@+id/todayclass"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_below="@+id/text"
+            android:padding="5dp"
+            android:textSize="18dp"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/todayclass"
+            android:layout_alignParentRight="true"
+            android:text="Tap to Update"
+            android:id="@+id/update"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:id="@+id/gridview1"
+        android:background="#FEFEC2"
+        android:padding="10dp"
+        android:numColumns="2"
+        android:layout_below="@id/rellay1"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        />
+
+    <!--<com.android.volley.toolbox.NetworkImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/adsimage"-->
+        <!--android:visibility="gone"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--/>-->
+
+
+
+</RelativeLayout>
